@@ -1,0 +1,36 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+#toTop-right {
+  display:none;
+  text-decoration:none;
+  position:fixed;
+  bottom:1.25rem;
+  right:1.25rem;
+  outline:none;
+}
+#toTop-left {
+  display:none;
+  text-decoration:none;
+  position:fixed;
+  bottom:1.25rem;
+  left:1.25rem;
+  outline:none;
+}
+
+#toTop-center {
+  display:none;
+  text-decoration:none;
+  position:fixed;
+  bottom: 0.625rem;
+  left:50%;
+  margin-left:-1.25rem; /*Fine tuning depending on the content */
+  outline:none;
+}

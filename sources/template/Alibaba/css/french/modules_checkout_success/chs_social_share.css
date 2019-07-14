@@ -1,0 +1,41 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+.boxContainerCheckoutSuccessSocial {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    text-align: center;
+}
+
+.boxContainerCheckoutSuccessSocial img {
+}
+
+.boxContainerCheckoutSuccessSocial a {
+}
+
+
+.boxHeadingCheckoutSuccessSocial {
+    overflow: hidden;
+    padding: 3px;
+    text-transform: uppercase;
+    font-size: 0.6875rem;
+    font-weight: bold;
+}
+
+
+.boxContentsCheckoutSuccessSocial {
+    /*  background-image:url(../../../../../image/template/id_petits_plus/modules_boxes/french/boxe_small_middle.gif);  */
+
+}
+
+.boxContentsCheckoutSuccessSocialBottom {
+    padding: 3px;
+    /*  background-image:url(../../../../../image/template/id_petits_plus/modules_boxes/french/boxe_small_bottom.gif); */
+}

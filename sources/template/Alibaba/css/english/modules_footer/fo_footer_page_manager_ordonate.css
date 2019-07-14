@@ -1,0 +1,95 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+div.textPositionFooterPageManagerOrdonnate h3 {
+    padding-left: 9.375rem;
+}
+
+ul.first {
+    float: left;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 0.625rem;
+    list-style: none;
+    text-align: left;
+    color: #373534;
+    padding-bottom: 0.625rem;
+    padding-top: 0.625rem;
+    width: 170px;
+    border-left: 1px solid #bfb9b7;
+    height: 200px;
+}
+
+ul.first A {
+    color: #373534;
+}
+
+
+ul.first a:hover {
+    color: #373534;
+}
+
+ul.second {
+    float: left;
+    width: 200px;
+    margin: 0;
+    padding-left: 60px;
+    padding-bottom: 0.625rem;
+    padding-top: 0.625rem;
+    list-style: none;
+    text-align: left;
+    color: #373534;
+    padding-right: 1.25rem;
+}
+
+ul.second A {
+    color: #373534;
+}
+
+ul.second a:hover {
+    color: #373534;
+}
+
+ul.first h1 {
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 2px 0;
+    width: 11.25rem;
+    color: #4d4d4f;
+}
+
+ul.second h1 {
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 2px 0;
+    width: 11.25rem;
+    color: #4d4d4f;
+}
+
+
+div.horizontale {
+    background: #7e736f;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 888px;
+    padding: 50px 0;
+}
+
+
+div.horizontale a {
+    float: left;
+    margin-left: 12.5%;
+    color: #fff;
+    text-decoration: none;
+    font-size: .8em
+}
+

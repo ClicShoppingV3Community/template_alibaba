@@ -1,0 +1,59 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+/******************************
+customization slider
+*******************************/
+
+#slider1, #slider1 li {
+    width: auto;
+    overflow: hidden;
+    height: 100%;
+    padding-top: 0.625rem;
+}
+
+#slider1 {
+    width: auto;
+}
+
+#slider1 img {
+    border: none;
+}
+
+.boxContainerProductsCrossSellSudoSlider {
+    font-weight: normal;
+    margin-bottom: 0;
+    padding-bottom: 0.3125rem;
+}
+
+
+div.productsInfoCrossSellSudoSliderProductsTitle, span.productsInfoCrossSellSudoSliderProductsTitle h2 {
+    font-size: 1.25rem;
+    color: #753d22;
+    padding-left: 0.625rem;
+    text-align: left;
+    padding-bottom: 0.625rem;
+}
+
+
+.productsInfoCrossSellSudoSliderBorder {
+    border: 1px solid #dbd5d5;
+    height: 269px;
+}
+
+.productsInfoCrossSellSudoSliderTitle {
+    text-align: center;
+}
+
+.productsInfoCrossSellSudoSliderTextPrice {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.625rem;
+}

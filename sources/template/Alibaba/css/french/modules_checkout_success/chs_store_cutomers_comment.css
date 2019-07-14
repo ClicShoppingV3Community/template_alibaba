@@ -1,0 +1,153 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+.checkout_success_store_customers_comment_introduction {
+}
+
+.checkout_success_store_customers_comment_quest_sub_title {
+    float: left;
+    width: 910px;
+    height: 20px;
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background-repeat: repeat-x;
+    color: #000;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.checkout_success_store_customers_comment_quest_sub_title span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.checkout_success_store_customers_comment_quest-detail, .checkout_success_store_customers_comment_quest-detail-full {
+    float: left;
+    width: 920px;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr {
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr.notions {
+    height: 23px;
+    background-image: none;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr.none {
+    height: 30px;
+    background-image: none;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr.none-last {
+    height: 10px;
+    background-image: none;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr.deg {
+    height: 4px;
+    background-image: none;
+    font-size: 1px;
+    border-left: 1px solid #d3d0d1;
+    border-right: 1px solid #d3d0d1;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr.deg td {
+    border-left: 1px solid #d3d0d1;
+    border-right: 1px solid #d3d0d1;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr th.first {
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: left;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr td {
+    text-align: center;
+    cursor: pointer;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr .col-left {
+    border-left: 1px solid #d3d0d1;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr .col-right {
+    border-right: 1px solid #d3d0d1;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr .col1 {
+    border-left: 1px solid #d3d0d1;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr .col5, .checkout_success_store_customers_comment_quest-detail table tr .col10 {
+    background-color: #f3f7fc;
+    border-left: 1px solid #d3d0d1;
+    border-right: 1px solid #d3d0d1;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr td.active0 {
+    background-color: #de0f2c;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr td.active1 {
+    background-color: #e22f21;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr td.active2 {
+    background-color: #e54d16;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr td.active3 {
+    background-color: #e96b0b;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr td.active4 {
+    background-color: #ed8b00;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr td.active5 {
+    background-color: #d19109;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr td.active6 {
+    background-color: #b49813;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr td.active7 {
+    background-color: #999e1d;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr td.active8 {
+    background-color: #7ca426;
+}
+
+.checkout_success_store_customers_comment_quest-detail table tr td.active9 {
+    background-color: #60ab30;
+}
+
+.checkout_success_store_customers_comment_quest-detail-full table tr td {
+    height: 30px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    font-weight: bold;
+}
+
+.checkout_success_store_customers_comment_quest-detail-full table tr.none-last td {
+    height: 10px;
+}

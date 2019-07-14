@@ -1,0 +1,183 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+
+.hidden, .collapsed, .block_hidden_only_for_screen {
+    display: none;
+}
+
+
+.block_hidden_only_for_screen {
+    display: block;
+    margin-top: 1em;
+}
+
+.item > div {
+    margin: 0;
+    padding: 0 10px;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    color: #000000 !important;
+}
+
+
+/* Tabs */
+li.idTabs {
+    margin-left: 1px;
+    float: left; /*pour IE*/
+}
+
+
+ul.idTabs {
+    list-style-type: none;
+}
+
+
+ul.idTabs li {
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+
+ul.idTabs li a {
+    color: #0066CC;
+    display: block !important;
+    /*     display:inline;*/
+    font-weight: normal;
+    height: 0.625rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: left;
+    width: 100%;
+
+}
+
+ul.idTabs li a:hover {
+    background-color: #edac27;
+}
+
+ul.idTabs li a.selected {
+    /* padding-left:0em; */
+    height: auto;
+    padding-left: 0;
+}
+
+
+/* IdTabs Short*/
+
+ul.idTabsShort {
+    width: 100%;
+    float: left;
+    margin: 1.5em 0 1.3em 0;
+    height: 30px;
+    border: none;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px dotted #D4D4D4;
+}
+
+
+ul.idTabsShort li {
+    margin: 0em 0em 0 0;
+    line-height: 0.9375rem !important;
+    /*  line-height:25px;*/
+}
+
+
+ul.idTabsShort li a {
+    /*padding:5px 0.9375rem 0px 0*/
+    border: medium none;
+    color: #999999;
+    font-weight: normal;
+    padding: 5px 0.9375rem 9px 0 !important;
+    width: auto;
+}
+
+ul.idTabsShort li a:hover {
+    border: none;
+    color: black;
+    padding: 5px 0.9375rem 9px 0;
+}
+
+ul.idTabsShort li a.selected {
+    border: medium none;
+    color: black;
+    padding: 5px 0.9375rem 9px 0;
+}
+
+
+ul#more_info_tabs {
+    background-color: #d6d2d0;
+    border: medium none;
+    margin-bottom: 0;
+    width: 800px;
+    padding: 0 0.9375rem 0 0;
+}
+
+ul#more_info_tabs li a.selected {
+    background-color: #edac27;
+    color: #FFFFFF;
+}
+
+ul#more_info_tabs li A {
+    border-left: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    height: auto;
+    padding: 7px 1.25rem !important;
+}
+
+
+/* Contenu qui va s'afficher dans  l'onglet */
+
+div.sheets {
+    width: 800px;
+    float: left;
+    border-bottom: solid 2px #edac27;
+    border-left: solid 2px #edac27;
+    border-right: solid 2px #edac27;
+    margin-left: 1px;
+    padding-left: 0.625rem;
+}
+
+
+div#more_info_sheets ul li {
+    background-position: 0px 1px;
+    margin-bottom: 0.4em
+
+}
+
+div.more_info_sheets {
+    border-bottom: solid 2px #b5a432;
+    border-left: solid 2px #b5a432;
+    border-right: solid 2px #b5a432;
+    margin-left: 1px;
+    padding: 5px 10px;
+    width: 637px;
+}
+
+
+#more_info_sheets #idTab1 {
+    width: 662px;
+    font-size: 0.75rem;
+    color: #323232;
+
+}
+
+div.otherTab h3 {
+    padding: 0px 0px 0 10px;
+    font-size: 0.75rem;
+    color: #323232;
+}	

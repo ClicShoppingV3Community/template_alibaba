@@ -1,0 +1,33 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+
+
+
+/* Landscape phones and down */
+@media (max-width: 320px) { 
+    div.FrontPageCategories {
+        width: 100px;
+    }
+}
+
+
+@media (min-width: 31.5625rem) and (max-width: 480px) {
+    div.FrontPageCategories {
+        width: 180px;
+    }
+
+}
+
+@media (min-width: 485px) and (max-width: 600px) {
+    div.FrontPageCategories {
+        width: 240px;
+    }  
+}

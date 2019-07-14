@@ -1,0 +1,72 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+.ModulesProductsNewBoostrapLine2Image {
+    text-align: left;
+}
+
+.ModulesProductsNewBoostrapLine2Title H3 {
+    text-align: left;
+    padding-left: 0.625rem;
+    text-transform: uppercase;
+}
+
+.ModulesProductsNewBoostrapLine2Title A {
+    text-decoration: none;
+}
+
+
+.ModulesProductsNewBoostrapLine2ShortDescription {
+    text-align: left;
+    padding-left: 0.625rem;
+    font-weight: normal;
+}
+
+
+.ModulesProductsNewBoostrapLine2TextPrice {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.ModulesProductsNewBoostrapLine2StockImage {
+    text-align: center;
+    padding-top: 0.625rem;
+}
+
+.ModulesProductsNewBoostrapLine2FlashDiscount {
+    padding-top: 0.625rem;
+}
+
+
+.ModulesProductsNewBoostrapLine2QuantityMinOrder {
+    font-size: 9px;
+    text-align: center;
+    color: #7F736F;
+    padding-top: 0.625rem;
+}
+
+.ModulesProductsNewBoostrapLine2QuantityMinOrder {
+    font-size: 9px;
+    text-align: center;
+    color: #7F736F;
+    padding-top: 0.625rem;
+}
+
+.ModulesProductsNewBoostrapLine2ViewDetails {
+    text-align: center;
+    padding-top: 0.3125rem;
+}
+
+.ModulesProductsNewBoostrapLine2SubmitButton {
+    text-align: center;
+    padding-top: 0.3125rem;
+}
