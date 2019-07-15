@@ -9,7 +9,7 @@
   "license":			"GPL 2 - MIT",
   "tag":			    "template, design, catalog",
  "install":            "sources/template/",
-  "module_directory":   "",
+  "module_directory":   "template",
   "apps_name":          "",
   "type_module":      "template",
   "dependance":       "",
