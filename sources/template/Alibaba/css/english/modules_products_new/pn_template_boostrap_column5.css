@@ -27,7 +27,7 @@
 }
 
 .ModulesProductsNewBoostrapColumn5ShortDescription h3 {
-  font-size:9px;
+  font-size:0.85rem;
   text-align:center;
   padding-top: 0.3125rem;
   color: #7F736F;
@@ -47,7 +47,7 @@
 
 
 .ModulesProductsNewBoostrapColumn5StockImage  {
-  font-size:9px;
+  font-size:0.85rem;
   text-align:center;
   vertical-align:text-top;
   color: #7F736F;
@@ -57,7 +57,7 @@
 
 
 .ModulesProductsNewBoostrapColumn5QuantityMinOrder {
-  font-size:9px;
+  font-size:0.85rem;
   text-align:center;
   color: #7F736F;
   padding-top: 0.625rem;
@@ -66,7 +66,7 @@
 
 
 .ModulesProductsNewBoostrapColumn5ProductsQuantityUnit  {
-  font-size:9px;
+  font-size:0.85rem;
   text-align:center;
   color: #7F736F;
   padding-top: 0.625rem;

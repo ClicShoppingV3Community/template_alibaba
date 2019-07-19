@@ -1091,3 +1091,7 @@
 .no-gutters > [class*="col-"] {
   padding-right: 0 !important;
   padding-left: 0 !important; }
+
+ul.pagination {
+  float: right!important;
+}

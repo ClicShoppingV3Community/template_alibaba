@@ -42,6 +42,9 @@ body {
   width: 100%;
 }
 
+.FrameWork {
+  background-color: #F8F8F8;
+}
 .orderEdit {
   font-size : 0.625rem;
   color: #0544d3;
