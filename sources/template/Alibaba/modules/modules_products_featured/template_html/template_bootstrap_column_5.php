@@ -55,7 +55,7 @@
             <p><span class="ModulesProductsFeaturedBoostrapColumn5QuantityMinOrder"><?php echo $input_quantity; ?>&nbsp; </span></p>
             <p>
               <a href="#" class="ModulesProductsFeaturedBoostrapColumn5ViewDetails"><?php echo $button_small_view_details; ?></a>
-              <a href="#" class="ModulesProductsFeaturedBoostrapColumn5SubmitButton"><?php echo $submit_button; ?>
+              <a href="#" class="ModulesProductsFeaturedBoostrapColumn5SubmitButton"><?php echo $submit_button; ?></a>
             </p>
             <?php echo $endform; ?>
           </div> <!-- action-wrap.// -->
