@@ -31,7 +31,7 @@ If you must make an update, please, copy the files inside the Alibaba template.
 Implementation:
 
 - Copy the All Diretories inside Shop expcept ModuleInfosJson
-- Copy the modules_shopping_cart_login.json into ClicShopping/Work/Cache/Github (manual installation)
+- Copy the template_alibaba.json into ClicShopping/Work/Cache/Github (manual installation)
 - In your administration : Design / Configuration / Configuration : Change the website theme
 
 
