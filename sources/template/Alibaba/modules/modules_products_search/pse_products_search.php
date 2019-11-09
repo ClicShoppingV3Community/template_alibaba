@@ -40,6 +40,7 @@
       $CLICSHOPPING_ProductsFunctionTemplate = Registry::get('ProductsFunctionTemplate');
       $CLICSHOPPING_Search = Registry::get('Search');
       $CLICSHOPPING_ProductsAttributes = Registry::get('ProductsAttributes');
+      $CLICSHOPPING_Reviews = Registry::get('Reviews');
 
       $listingTotalRow = $CLICSHOPPING_Search->getResult();
 

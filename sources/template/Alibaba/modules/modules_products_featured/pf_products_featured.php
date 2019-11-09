@@ -41,6 +41,7 @@
       $CLICSHOPPING_Template = Registry::get('Template');
       $CLICSHOPPING_ProductsFunctionTemplate = Registry::get('ProductsFunctionTemplate');
       $CLICSHOPPING_ProductsAttributes = Registry::get('ProductsAttributes');
+      $CLICSHOPPING_Reviews = Registry::get('Reviews');
 
       if (isset($_GET['Products']) && isset($_GET['Featured']) ) {
         if (MODULE_PRODUCTS_FEATURED_MAX_DISPLAY != 0 ) {
