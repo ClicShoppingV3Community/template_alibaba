@@ -45,7 +45,8 @@
                     'modules_products_specials/modules_products_specials_general.css',
                     'modules_shopping_cart/modules_shopping_cart_general.css',
                     'modules_products_search/modules_products_search_general.css',
-                    'general/bootstrap_customize.css'
+                    'general/bootstrap_customize.css',
+                    'general/alibaba.css'
                    ];
 
     $ignore_regex = '/^_/';
@@ -108,7 +109,8 @@
                'modules_products_specials/modules_products_specials_general.css',
                'modules_shopping_cart/modules_shopping_cart_general.css',
                'modules_products_search/modules_products_search_general.css',
-               'general/bootstrap_customize.css'
+               'general/bootstrap_customize.css',
+               'general/alibaba.css'
               ];
 
 /**
