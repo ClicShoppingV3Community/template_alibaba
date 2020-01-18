@@ -24,7 +24,7 @@
 <?php
   if (!empty($products_short_description)) {
 ?>
-            <p><span itemprop="description"><?php echo $products_short_description; ?></span></p>
+            <p><?php echo $products_short_description; ?></p>
 <?php
   }
   if (!empty($products_stock)) {
@@ -48,7 +48,7 @@
         <aside class="col-sm-3">
           <div class="border-left pl-3">
             <div class="price-wrap">
-              <span class="h3 ModulesProductsSearchBoostrapColumn5TextPrice" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><?php echo CLICSHOPPING::getDef('text_price') . ' ' . $product_price; ?>
+              <span class="h3 ModulesProductsSearchBoostrapColumn5TextPrice" ><?php echo CLICSHOPPING::getDef('text_price') . ' ' . $product_price; ?>
             </div> <!-- info-price-detail // -->
             <?php echo $form; ?>
 
@@ -65,3 +65,4 @@
   <div class="separator"></div>
   <div class="hr"></div>
 </div>
+<?php echo $jsonLtd; ?>
