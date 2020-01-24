@@ -12,15 +12,16 @@
   use ClicShopping\OM\HTML;
   use ClicShopping\OM\CLICSHOPPING;
 
-  if ( $CLICSHOPPING_MessageStack->exists('search') ) {
-    echo $CLICSHOPPING_MessageStack->get('search');
+  if ( $CLICSHOPPING_MessageStack->exists('main') ) {
+    echo $CLICSHOPPING_MessageStack->get('main');
   }
+
   require_once($CLICSHOPPING_Template->getTemplateFiles('breadcrumb'));
 
   echo HTML::form('advanced_search', CLICSHOPPING::link(null, 'Search&Q'), 'post', 'id="advanced_search" role="form"', ['session_id' => true]);
 ?>
 
-  <script src="<?php echo CLICSHOPPING::link($CLICSHOPPING_Template->getTemplateDefaultJavaScript('clicshopping/general.js')); ?>"></script>
+<script src="<?php echo CLICSHOPPING::link($CLICSHOPPING_Template->getTemplateDefaultJavaScript('clicshopping/general.js')); ?>"></script>
 <section class="advanced_search" id="advanced_search">
   <div class="contentContainer card">
     <div class="contentText">

@@ -45,14 +45,14 @@
     </div> <!-- BodyWrapper -->
   </div> <!-- container //-->
 <?php
-  echo $CLICSHOPPING_Template->getBlocks('footer_scripts');
+    echo $CLICSHOPPING_Template->getBlocks('footer_scripts');
 
-  $source_folder = CLICSHOPPING::getConfig('dir_root', 'Shop') . 'includes/Module/Hooks/Shop/Footer/';
-  $file_get_output = 'FooterOutput*';
-  $file_get_call = 'FooterCall*';
-  $hook_call = 'Footer';
+    $source_folder = CLICSHOPPING::getConfig('dir_root', 'Shop') . 'includes/Module/Hooks/Shop/Footer/';
+    $file_get_output = 'FooterOutput*';
+    $file_get_call = 'FooterCall*';
+    $hook_call = 'Footer';
 
-  $CLICSHOPPING_Template->useRecursiveModulesHooksForTemplate($source_folder,  $file_get_output,  $file_get_call, $hook_call);
+    $CLICSHOPPING_Template->useRecursiveModulesHooksForTemplate($source_folder,  $file_get_output,  $file_get_call, $hook_call);
 ?>
   </body>
 </html>

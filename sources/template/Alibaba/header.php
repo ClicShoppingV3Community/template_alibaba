@@ -31,14 +31,14 @@
     <meta name="no-email-collection" content="<?php echo HTTP::typeUrlDomain(); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <?php
-  $source_folder = CLICSHOPPING::getConfig('dir_root', 'Shop') . 'includes/Module/Hooks/Shop/Header/';
-  $output = 'HeaderOutput*';
-  $call = 'HeaderCall*';
-  $hook_call = 'Header';
+     $source_folder = CLICSHOPPING::getConfig('dir_root', 'Shop') . 'includes/Module/Hooks/Shop/Header/';
+     $output = 'HeaderOutput*';
+     $call = 'HeaderCall*';
+     $hook_call = 'Header';
 
-  $CLICSHOPPING_Template->useRecursiveModulesHooksForTemplate($source_folder,  $output,  $call, $hook_call);
+     $CLICSHOPPING_Template->useRecursiveModulesHooksForTemplate($source_folder,  $output,  $call, $hook_call);
 
-  echo $CLICSHOPPING_Template->getBlocks('header_tags') . "\n";
+     echo $CLICSHOPPING_Template->getBlocks('header_tags') . "\n";
 ?>
   </head>
   <body>

@@ -45,7 +45,6 @@
       $listingTotalRow = $CLICSHOPPING_Search->getResult();
 
        if (isset($_GET['Q'])) {
-
         $Qlisting = $CLICSHOPPING_Search->getListing();
 
         if (defined('MODULE_PRODUCTS_SEARCH_MAX_DISPLAY')) {

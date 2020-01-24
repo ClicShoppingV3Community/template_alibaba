@@ -37,7 +37,6 @@
        $CLICSHOPPING_Template = Registry::get('Template');
       $CLICSHOPPING_Category = Registry::get('Category');
       $CLICSHOPPING_PageManagerShop = Registry::get('PageManagerShop');
-      $CLICSHOPPING_Reviews = Registry::get('Reviews');
 
       if (CLICSHOPPING::getBaseNameIndex() && !$CLICSHOPPING_Category->getPath()) {
 

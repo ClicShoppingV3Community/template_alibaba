@@ -17,8 +17,8 @@
 
   $CLICSHOPPING_Address = Registry::get('Address');
 
-  if ( $CLICSHOPPING_MessageStack->exists('addressbook') ) {
-    echo $CLICSHOPPING_MessageStack->get('addressbook');
+  if ( $CLICSHOPPING_MessageStack->exists('main') ) {
+    echo $CLICSHOPPING_MessageStack->get('main');
   }
 
   require_once($CLICSHOPPING_Template->getTemplateFiles('breadcrumb'));
@@ -86,7 +86,13 @@
             <?php echo $CLICSHOPPING_Address->addressFormat($format_id, $addresses, true, ' ', '<br />'); ?>
           </div>
           <div class="card-footer text-md-center">
-            <?php echo HTML::button(CLICSHOPPING::getDef('button_edit'), null, CLICSHOPPING::link(null, 'Account&AddressBookProcess&Edit&edit=' . $Qaddresses->valueInt('address_book_id')),'success', null, 'sm') .  ' ' . HTML::button(CLICSHOPPING::getDef('button_delete'), null, CLICSHOPPING::link(null, 'Account&AddressBookProcess&Delete&delete=' . $Qaddresses->valueInt('address_book_id')),  'danger', null, 'sm'); ?>
+<?php
+              echo HTML::button(CLICSHOPPING::getDef('button_edit'), null, CLICSHOPPING::link(null, 'Account&AddressBookProcess&Edit&edit=' . $Qaddresses->valueInt('address_book_id')),'success', null, 'sm') .  ' ';
+
+              if ($Qaddresses->valueInt('address_book_id') != $CLICSHOPPING_Customer->getDefaultAddressID()) {
+                echo HTML::button(CLICSHOPPING::getDef('button_delete'), null, CLICSHOPPING::link(null, 'Account&AddressBookProcess&Delete&delete=' . $Qaddresses->valueInt('address_book_id')),  'danger', null, 'sm');
+              }
+?>
           </div>
 <?php
   }
@@ -113,6 +119,7 @@
 // --- Button   -----
 // ----------------------
 ?>
+        <div class="separator"></div>
         <div class="control-group">
         <div class="controls">
           <span class="buttonSet">

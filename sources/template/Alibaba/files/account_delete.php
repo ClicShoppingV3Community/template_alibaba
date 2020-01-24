@@ -11,8 +11,8 @@
 
   require_once($CLICSHOPPING_Template->getTemplateFiles('breadcrumb'));
 
-  if ( $CLICSHOPPING_MessageStack->exists('account_delete') ) {
-    echo $CLICSHOPPING_MessageStack->get('account_delete');
+  if ( $CLICSHOPPING_MessageStack->exists('main') ) {
+    echo $CLICSHOPPING_MessageStack->get('main');
   }
 ?>
 <section class="account_delete" id="account_delete">

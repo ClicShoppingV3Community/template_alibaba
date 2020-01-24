@@ -64,7 +64,7 @@
         $shopping_cart .= '<tr>';
         $shopping_cart .= '<th style="width:60%">' . CLICSHOPPING::getDef('table_heading_products') . '</th>';
         $shopping_cart .= '<th style="width:18%">' . CLICSHOPPING::getDef('table_heading_quantity') . '</th>';
-        $shopping_cart .= '<th style="width:22%" class="text-md-right">' . CLICSHOPPING::getDef('table_heading_total') . '</th>';							
+        $shopping_cart .= '<th style="width:22%" class="text-md-right">' . CLICSHOPPING::getDef('table_heading_total') . '</th>';
         $shopping_cart .= '</tr>';
         $shopping_cart .= '</thead>';
         $shopping_cart .= '<tbody>';
@@ -96,8 +96,32 @@
 
           $products_name = HTML::hiddenField('products_id[]', $products[$i]['id']);
           $products_name .= HTML::link($products_name_url, $products[$i]['name']);
+          $remove_product_id = 'remove_product_' . $products[$i]['id'];
 
-          $trash = HTML::link(CLICSHOPPING::link(null, 'Cart&Delete&products_id=' . $products[$i]['id']), '<i class="fas fa-trash"></i>', CLICSHOPPING::getDef('button_remove')) . '&nbsp;&nbsp;&nbsp;';
+          $trash = '
+          <a href="#" data-toggle="modal" data-target="#' . $remove_product_id . '"><i class="fas fa-trash"></i></a>
+          <div class="modal fade ' . $remove_product_id . '" tabindex="-1" role="dialog" aria-labelledby="' . $remove_product_id . '" aria-hidden="true" id="' . $remove_product_id . '">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-content">
+                  <div class="modal-header">
+                  <h6 class="modal-title" id="myModalLabel">'. ClicShopping::getDef('text_title_modal_delete') . '</h6>
+                  </div>
+                  <div class="modal-body">
+                    ' . CLICSHOPPING::getDef('text_title_modal_info') . '
+                  </div>
+                  <div class="modal-footer">
+                    <div class="row col-md-12">
+                      <span class="pull-left" data-dismiss="modal" aria-hidden="true">' . HTML::button(ClicShopping::getDef('button_cancel'), null, null, 'light') . '</span>
+                      <span class="pull-right">' . HTML::button(CLICSHOPPING::getDef('button_delete'), null, CLICSHOPPING::link(null, 'Cart&Delete&products_id=' . $products[$i]['id']), 'danger') . '</span>
+                    </div>                  
+                </div>          
+              </div>
+              </div>
+            </div>
+          </div>
+          ';
+
           $image =  HTML::link($products_name_url, HTML::image($CLICSHOPPING_Template->getDirectoryTemplateImages() . $products[$i]['image'], $products[$i]['name'], 50, 50)) . '&nbsp;&nbsp;&nbsp;';
 
           if (STOCK_CHECK == 'true') {
@@ -167,12 +191,14 @@
             $ticker = '' ;
            }
 
+          $total_overall_reviews = '<span class="ModulesReviews">' . HTML::stars($CLICSHOPPING_Reviews->getAverageProductReviews($products_id)) . '</span>';
+
           $cart ='<tr id="ShoppingCartContent" class="ModulesShoppingCartProductsListingContent">';
           $cart .='<td id="ShoppingCartProducts" class="ModulesShoppingCartProductsListingContent" data-th="Product">';
           $cart .='<div class="row">';
           $cart .='<div id="ShoppingCartImage" class="col-sm-2 hidden-xs">' . $image . '</div>';
           $cart .='<div class="col-sm-10">';
-          $cart .='<p id="ShoppingCartProductsName" class="nomargin text-sm-left">' . $ticker . ' ' .  $products_name . '</p>';
+          $cart .='<p id="ShoppingCartProductsName" class="nomargin text-sm-left">' . $ticker . ' ' .  $products_name . ' ' . $total_overall_reviews . '</p>';
           $cart .='<p id="ShoppingCartProductsOptions" class="small">' . $products_attributes . '</p>';
           $cart .='</div>';
           $cart .='</div>';

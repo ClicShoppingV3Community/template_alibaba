@@ -73,7 +73,7 @@
             $new_prods_content .= '<button type="button" class="btn btn-secondary dropdown-toggle"  data-toggle="dropdown" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">';
             $new_prods_content .= CLICSHOPPING::getDef('text_sort_by');
             $new_prods_content .= '</button>';
-            $new_prods_content .= '<ul class="dropdown-menu text-md-left"  aria-labelledby="dropdownMenu2">';
+            $new_prods_content .= '<ul class="dropdown-menu text-md-left" aria-labelledby="dropdownMenu2">';
 
 // number of sort criterias
             $column_list = ProductsNewClass::getCountColumnList();
@@ -145,7 +145,6 @@
           $new_prods_content .= '<div class="card">';
 
           if ($listingTotalRow > 0) {
-
             $new_prods_content .= '<div class="d-flex flex-wrap">';
 
 // display number of short description
@@ -274,7 +273,7 @@
 // display products weight
             $products_weight = $CLICSHOPPING_ProductsFunctionTemplate->getProductsWeight($products_id);
 // Reviews
-              $avg_reviews = '<span class="ModulesReviews">' . HTML::stars($CLICSHOPPING_Reviews->getAverageProductReviews($products_id)) . '</span>';
+            $avg_reviews = '<span class="ModulesReviews">' . HTML::stars($CLICSHOPPING_Reviews->getAverageProductReviews($products_id)) . '</span>';
 // Json ltd
               $jsonLtd = $CLICSHOPPING_ProductsFunctionTemplate->getProductJsonLd($products_id);
 
@@ -304,7 +303,7 @@
           if (($listingTotalRow > 0) && ((PREV_NEXT_BAR_LOCATION == '2') || (PREV_NEXT_BAR_LOCATION == '3'))) {
             if ((PREV_NEXT_BAR_LOCATION == '2') || (PREV_NEXT_BAR_LOCATION == '3')) {
               $new_prods_content .= '<div class="clearfix"></div>';
-              $new_prods_content .= '<div class="separator"></div>';
+              $new_prods_content .= '<div style="padding-top:10px;"></div>';
               $new_prods_content .= '<div>';
               $new_prods_content .= '<div class="col-md-6 pagenumber hidden-xs">';
               $new_prods_content .=  $Qlisting->getPageSetLabel(CLICSHOPPING::getDef('text_display_number_of_items'));

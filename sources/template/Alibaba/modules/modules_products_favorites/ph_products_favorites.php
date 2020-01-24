@@ -131,7 +131,6 @@
           $new_prods_content .= '<div class="card">';
 
           if ($listingTotalRow > 0) {
-
             $new_prods_content .= '<div class="d-flex flex-wrap">';
 
 // display number of short description
@@ -151,7 +150,6 @@
               $_POST['products_id'] = $products_id;
 
               $products_name_url = $CLICSHOPPING_ProductsFunctionTemplate->getProductsUrlRewrited()->getProductNameUrl($CLICSHOPPING_ProductsCommon->getID());
-
 //product name
               $products_name = $CLICSHOPPING_ProductsCommon->getProductsName($products_id);
 //Stock (good, alert, out of stock).
@@ -221,7 +219,7 @@
 // See the button more view details
                $button_small_view_details = $CLICSHOPPING_ProductsFunctionTemplate->getButtonViewDetails(MODULE_PRODUCTS_FAVORITES_DELETE_BUY_BUTTON, $products_id);
 // Display the image
-              $products_image = $CLICSHOPPING_ProductsFunctionTemplate->getImage(MODULE_PRODUCTS_FAVORITES_IMAGE_MEDIUM, $products_id);
+             $products_image = $CLICSHOPPING_ProductsFunctionTemplate->getImage(MODULE_PRODUCTS_FAVORITES_IMAGE_MEDIUM, $products_id);
 // Ticker Image
               $products_image .= $CLICSHOPPING_ProductsFunctionTemplate->getTicker(MODULE_PRODUCTS_FAVORITES_TICKER, $products_id, 'ModulesProductsFavoritesBootstrapTickerSpecial', 'ModulesProductsFavoritesBootstrapTickerFavorite', 'ModulesProductsFavoritesBootstrapTickerFeatured', 'ModulesProductsFavoritesBootstrapTickerNew');
 
@@ -234,9 +232,9 @@
 // products model
               $products_model = $CLICSHOPPING_ProductsFunctionTemplate->getProductsModel($products_id);
 // manufacturer
-                $products_manufacturers = $CLICSHOPPING_ProductsFunctionTemplate->getProductsManufacturer($products_id);
+              $products_manufacturers = $CLICSHOPPING_ProductsFunctionTemplate->getProductsManufacturer($products_id);
 // display the price by kilo
-                $product_price_kilo = $CLICSHOPPING_ProductsFunctionTemplate->getProductsPriceByWeight($products_id);
+              $product_price_kilo = $CLICSHOPPING_ProductsFunctionTemplate->getProductsPriceByWeight($products_id);
 // display date available
                 $products_date_available =  $CLICSHOPPING_ProductsFunctionTemplate->getProductsDateAvailable($products_id);
 // display products only shop
@@ -261,7 +259,7 @@
 // display products weight
             $products_weight = $CLICSHOPPING_ProductsFunctionTemplate->getProductsWeight($products_id);
 // Reviews
-              $avg_reviews = '<span class="ModulesReviews">' . HTML::stars($CLICSHOPPING_Reviews->getAverageProductReviews($products_id)) . '</span>';
+            $avg_reviews = '<span class="ModulesReviews">' . HTML::stars($CLICSHOPPING_Reviews->getAverageProductReviews($products_id)) . '</span>';
 // Json ltd
               $jsonLtd = $CLICSHOPPING_ProductsFunctionTemplate->getProductJsonLd($products_id);
 

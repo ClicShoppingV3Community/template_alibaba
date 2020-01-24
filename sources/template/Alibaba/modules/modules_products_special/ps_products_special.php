@@ -164,7 +164,6 @@
               $_POST['products_id'] = $products_id;
 
               $products_name_url = $CLICSHOPPING_ProductsFunctionTemplate->getProductsUrlRewrited()->getProductNameUrl($products_id);
-
 //product name
               $products_name = $CLICSHOPPING_ProductsCommon->getProductsName($products_id);
 //Stock (good, alert, out of stock).
@@ -206,7 +205,6 @@
 
 // Quantity type
               $products_quantity_unit = $CLICSHOPPING_ProductsFunctionTemplate->getProductQuantityUnitType($products_id);
-
 
 // **************************************************
 // Button Free - Must be above getProductsExhausted
@@ -275,7 +273,7 @@
 // display products weight
             $products_weight = $CLICSHOPPING_ProductsFunctionTemplate->getProductsWeight($products_id);
 // Reviews
-              $avg_reviews = '<span class="ModulesReviews">' . HTML::stars($CLICSHOPPING_Reviews->getAverageProductReviews($products_id)) . '</span>';
+            $avg_reviews = '<span class="ModulesReviews">' . HTML::stars($CLICSHOPPING_Reviews->getAverageProductReviews($products_id)) . '</span>';
 // Json ltd
               $jsonLtd = $CLICSHOPPING_ProductsFunctionTemplate->getProductJsonLd($products_id);
 
@@ -315,7 +313,6 @@
               $new_prods_content .= '<span class="pagenav">'.  $Qlisting->getPageSetLinks(CLICSHOPPING::getAllGET(array('page', 'info', 'x', 'y')), 'Shop') . '</span>';
               $new_prods_content .= '<span class="text-md-right">' . CLICSHOPPING::getDef('text_result_page') . '</span>';
               $new_prods_content .= '</div>';
-
               $new_prods_content .= '</div>';
               $new_prods_content .= '<div class="clearfix"></div>';
             }
