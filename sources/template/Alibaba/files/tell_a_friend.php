@@ -26,8 +26,8 @@
   echo HTML::form('email_friend', CLICSHOPPING::link(null, 'Products&TellAFriend&Process&products_id=' . $CLICSHOPPING_ProductsCommon->getID()), 'post', 'id="tell_a_friend"', ['tokenize' => true, 'action' => 'process']);
 ?>
 <section class="tell_a_friend" id="tell_a_friend">
-  <div class="contentContainer card">
-    <div class="contenttext">
+  <div class="contentContainer">
+    <div class="contenttext card">
       <div class="col-md-12">
         <div class="page-title"><h1><?php echo CLICSHOPPING::getDef('heading_title_friends'); ?></h1></div>
         <div class="inputRequirement float-md-right"><?php echo CLICSHOPPING::getDef('form_required_information'); ?></div>
