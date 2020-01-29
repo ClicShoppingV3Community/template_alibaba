@@ -100,7 +100,7 @@
 
           $trash = '
           <a href="#" data-toggle="modal" data-target="#' . $remove_product_id . '"><i class="fas fa-trash"></i></a>
-          <div class="modal fade ' . $remove_product_id . '" tabindex="-1" role="dialog" aria-labelledby="' . $remove_product_id . '" aria-hidden="true" id="' . $remove_product_id . '">
+          <div class="modal hide fade active' . $remove_product_id . '" tabindex="-1" role="dialog" aria-labelledby="' . $remove_product_id . '" aria-hidden="true" id="' . $remove_product_id . '">
             <div class="modal-dialog modal-sm">
               <div class="modal-content">
                 <div class="modal-content">
@@ -111,12 +111,10 @@
                     ' . CLICSHOPPING::getDef('text_title_modal_info') . '
                   </div>
                   <div class="modal-footer">
-                    <div class="row col-md-12">
-                      <span class="pull-left" data-dismiss="modal" aria-hidden="true">' . HTML::button(ClicShopping::getDef('button_cancel'), null, null, 'light') . '</span>
-                      <span class="pull-right">' . HTML::button(CLICSHOPPING::getDef('button_delete'), null, CLICSHOPPING::link(null, 'Cart&Delete&products_id=' . $products[$i]['id']), 'danger') . '</span>
-                    </div>                  
-                </div>          
-              </div>
+                     <span class="pull-left" data-dismiss="modal" aria-hidden="true">' . HTML::button(ClicShopping::getDef('button_cancel'), null, null, 'light') . '</span>
+                     <span class="pull-right">' . HTML::button(CLICSHOPPING::getDef('button_delete'), null, CLICSHOPPING::link(null, 'Cart&Delete&products_id=' . $products[$i]['id']), 'danger') . '</span>
+                  </div>          
+                </div>
               </div>
             </div>
           </div>

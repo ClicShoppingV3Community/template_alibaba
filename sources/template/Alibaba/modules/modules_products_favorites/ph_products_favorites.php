@@ -281,7 +281,7 @@
             } //while
 
             $new_prods_content .= '</div> <!-- card.// -->';
-            $new_prods_content .= '</div>';  // flex
+            $new_prods_content .= '</div>' . "\n";
           } else {
             $new_prods_content .= '<div class="text-md-center alert alert-info">' . CLICSHOPPING::getDef('text_no_products') . '</div>';
           }
