@@ -54,8 +54,8 @@
 
             <p><span class="ModulesProductsSearchBoostrapColumn5QuantityMinOrder"><?php echo $input_quantity; ?>&nbsp; </span></p>
             <p>
-              <a href="#" class="ModulesProductsSearchBoostrapColumn5ViewDetails"><?php echo $button_small_view_details; ?></a>
-              <a href="#" class="ModulesProductsSearchBoostrapColumn5SubmitButton"><?php echo $submit_button; ?></a>
+              <span class="ModulesProductsSearchBoostrapColumn5ViewDetails"><?php echo $button_small_view_details; ?> </span>
+              <span class="ModulesProductsSearchBoostrapColumn5SubmitButton"><?php echo $submit_button; ?></span>
             </p>
             <?php echo $endform; ?>
           </div> <!-- action-wrap.// -->
