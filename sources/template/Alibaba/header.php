@@ -24,10 +24,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <base href="<?php echo HTTP::getShopUrlDomain() ;?>">
     <?php echo $CLICSHOPPING_Template->getAppsHeaderTags(); ?>
-    <title><?php echo HTML::outputProtected($CLICSHOPPING_Template->getTitle());?></title>
-    <meta name="Description" content="<?php echo HTML::outputProtected($CLICSHOPPING_Template->getDescription());?>" />
-    <meta name="Keywords" content="<?php echo HTML::outputProtected($CLICSHOPPING_Template->getKeywords());?>" />
-    <meta name="news_keywords" content="<?php echo HTML::outputProtected($CLICSHOPPING_Template->getNewsKeywords());?>" />
+    <?php
+    if (!isset($_GET['Product'])) {
+      ?>
+      <title><?php echo HTML::outputProtected($CLICSHOPPING_Template->getTitle()); ?></title>
+      <meta name="description" content="<?php echo HTML::outputProtected($CLICSHOPPING_Template->getDescription());?>" />
+      <meta name="keywords"  content="<?php echo HTML::outputProtected($CLICSHOPPING_Template->getKeywords());?>" />
+      <meta name="news_keywords" content="<?php echo HTML::outputProtected($CLICSHOPPING_Template->getNewsKeywords());?>" />
+      <?php
+    }
+    ?>
     <meta name="no-email-collection" content="<?php echo HTTP::typeUrlDomain(); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <?php
