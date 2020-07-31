@@ -57,7 +57,7 @@ use ClicShopping\OM\CLICSHOPPING;
                   <?php
                     if (!$CLICSHOPPING_Customer->isLoggedOn()) {
                       ?>
-                      <?php echo HTML::link(CLICSHOPPING::link(null, 'Account&Login'), CLICSHOPPING::getDef('modules_header_multi_template_create_account'), 'class="dropdown-item"'); ?>
+                      <?php echo HTML::link(CLICSHOPPING::link(null, 'Account&LogIn'), CLICSHOPPING::getDef('modules_header_multi_template_create_account'), 'class="dropdown-item"'); ?>
                       <?php
                     }
                   ?>
