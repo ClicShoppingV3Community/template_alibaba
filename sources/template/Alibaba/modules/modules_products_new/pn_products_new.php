@@ -108,7 +108,7 @@
 
 /*
             if ((defined('MODULE_HEADER_TAGS_GRID_LIST_VIEW_STATUS') && MODULE_HEADER_TAGS_GRID_LIST_VIEW_STATUS == 'True') && (strpos(MODULE_HEADER_TAGS_GRID_LIST_VIEW_PAGES, CLICSHOPPING::getBaseNameIndex() !== false))) {
-              $link =  CLICSHOPPING::link(CLICSHOPPING::getIndex(), CLICSHOPPING::getAllGET(array('page', 'info', 'sort')));
+              $link = CLICSHOPPING::link(CLICSHOPPING::getIndex(), CLICSHOPPING::getAllGET(array('page', 'info', 'sort')));
               $new_prods_content .= '<strong>' . CLICSHOPPING::getDef('text_view') . '</strong>';
               $new_prods_content .= '<div class="btn-group">';
               $new_prods_content .= '<a href="' . $link . '" id="list" class="btn btn-default btn-sm"><span class="fa fa-th-list"></span>' . CLICSHOPPING::getDef('text_view_list') . '</a>';
@@ -140,7 +140,7 @@
           }
 
           $new_prods_content .= '<div class="separator"></div>';
-          $new_prods_content .= '</div>'. "\n";
+          $new_prods_content .= '</div>' . "\n";
           $new_prods_content .= '<div class="boxContentsModulesProductsNew">';
           $new_prods_content .= '<div class="card">';
 
@@ -200,7 +200,7 @@
               if (MODULE_PRODUCTS_NEW_DELETE_BUY_BUTTON == 'False') {
                 if ($CLICSHOPPING_ProductsCommon->getProductsMinimumQuantity($products_id) != 0 && $CLICSHOPPING_ProductsCommon->getProductsQuantity($products_id) != 0) {
                   if ($CLICSHOPPING_ProductsAttributes->getHasProductAttributes($products_id) === false) {
-                    $form =  HTML::form('cart_quantity', CLICSHOPPING::link(null, 'Cart&Add' ),'post','class="justify-content-center"', ['tokenize' => true]). "\n";
+                    $form = HTML::form('cart_quantity', CLICSHOPPING::link(null, 'Cart&Add' ),'post','class="justify-content-center"', ['tokenize' => true]). "\n";
                     $form .= HTML::hiddenField('products_id', $products_id);
                     if (isset($_GET['ProductsNew'])) $form .= HTML::hiddenField('url', 'Products&ProductsNew');
                     $endform = '</form>';
