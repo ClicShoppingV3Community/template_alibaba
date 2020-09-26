@@ -69,13 +69,13 @@
       $categories_dropdown .= '</form>';
 
       if ($CLICSHOPPING_Service->isStarted('Banner')) {
-        if ($banner = $CLICSHOPPING_Banner->bannerExists('dynamic',  MODULES_HEADER_MULTI_MODULE_LOGO_BANNER_GROUP)) {
+        if ($banner == $CLICSHOPPING_Banner->bannerExists('dynamic',  MODULES_HEADER_MULTI_MODULE_LOGO_BANNER_GROUP)) {
           $logo_header = $CLICSHOPPING_Banner->displayBanner('static', $banner);
         } else {
           $logo_header = '';
         }
 
-        if ($banner = $CLICSHOPPING_Banner->bannerExists('dynamic',  MODULES_HEADER_MULTI_MODULE_BANNER_2_GROUP)) {
+        if ($banner == $CLICSHOPPING_Banner->bannerExists('dynamic',  MODULES_HEADER_MULTI_MODULE_BANNER_2_GROUP)) {
           $banner_header = $CLICSHOPPING_Banner->displayBanner('static', $banner);
         } else {
           $banner_header = '';
