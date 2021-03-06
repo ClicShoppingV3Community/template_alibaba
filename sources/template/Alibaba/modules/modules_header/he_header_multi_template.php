@@ -15,8 +15,8 @@
   use ClicShopping\Apps\Catalog\Categories\Classes\Shop\CategoryTree;
 
   class he_header_multi_template {
-    public $code;
-    public $group;
+    public string $code;
+    public string $group;
     public string $title;
     public string $description;
     public ?int $sort_order = 0;
@@ -30,7 +30,7 @@
       $this->title = CLICSHOPPING::getDef('modules_header_multi_template_title');
       $this->description = CLICSHOPPING::getDef('modules_header_multi_template_description');
 
-      if (defined('MODULES_HEADER_MULTI_TEMPLATE_STATUS')) {
+      if (\defined('MODULES_HEADER_MULTI_TEMPLATE_STATUS')) {
         $this->sort_order = MODULES_HEADER_MULTI_TEMPLATE_SORT_ORDER;
         $this->enabled = (MODULES_HEADER_MULTI_TEMPLATE_STATUS == 'True');
         $this->pages = MODULES_HEADER_MULTI_TEMPLATE_TEMPLATE_DISPLAY_PAGES;
@@ -60,7 +60,7 @@
       $content_width = (int)MODULES_HEADER_MULTI_TEMPLATE_TEMPLATE_CONTENT_WIDTH;
       $login = HTML::button(CLICSHOPPING::getDef('modules_header_multi_template_account_login'), null, null, 'primary', null, 'sm');
 
-      $form_advanced_result = HTML::form('quick_find', CLICSHOPPING::link(null, 'Search&Q'), 'post', 'id="quick_find"', ['session_id' => true]);
+      $form_advanced_result = HTML::form('searchData', CLICSHOPPING::link(null, 'Search&Q'), 'post', 'id="searchData"', ['session_id' => true]);
       $form = HTML::form('loginForm',  CLICSHOPPING::link(null, 'Account&LogIn&Process'), 'post', 'id="loginForm"', ['tokenize' => true]);
       $endform = '</form>';
 
@@ -116,7 +116,7 @@
     }
 
     public function check() {
-      return defined('MODULES_HEADER_MULTI_TEMPLATE_STATUS');
+      return \defined('MODULES_HEADER_MULTI_TEMPLATE_STATUS');
     }
 
     public function install()  {
@@ -249,7 +249,7 @@
           } else {
             $category_link = $category_id;
           }
-          if (($this->follow_cpath === true) && in_array($category_id, $this->cpath_array)) {
+          if (($this->follow_cpath === true) && \in_array($category_id, $this->cpath_array)) {
             $link_title = $this->cpath_start_string . $category['name'] . $this->cpath_end_string;
 //            $link_image =  $this->cpath_start_string . HTML::image($CLICSHOPPING_Template->getDirectoryTemplateImages() . $category['image'], HTML::outputProtected($category['name']), 150, 150, null, true) . $this->cpath_end_string;
           } else {

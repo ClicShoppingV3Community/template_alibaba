@@ -14,8 +14,8 @@
   use ClicShopping\OM\CLICSHOPPING;
 
   class ms_shopping_cart_products_listing {
-    public $code;
-    public $group;
+    public string $code;
+    public string $group;
     public string $title;
     public string $description;
     public ?int $sort_order = 0;
@@ -28,7 +28,7 @@
       $this->title = CLICSHOPPING::getDef('module_shopping_cart_products_listing_title');
       $this->description = CLICSHOPPING::getDef('module_shopping_cart_products_listing_description');
 
-      if (defined('MODULE_SHOPPING_CART_PRODUCTS_LISTING_STATUS')) {
+      if (\defined('MODULE_SHOPPING_CART_PRODUCTS_LISTING_STATUS')) {
         $this->sort_order = (int)MODULE_SHOPPING_CART_PRODUCTS_LISTING_SORT_ORDER;
         $this->enabled = (MODULE_SHOPPING_CART_PRODUCTS_LISTING_STATUS == 'True');
       }
@@ -71,7 +71,7 @@
 
         for ($i=0, $n=count($products); $i<$n; $i++) {
 // Push all attributes information in an array
-          if (isset($products[$i]['attributes']) && is_array($products[$i]['attributes'])) {
+          if (isset($products[$i]['attributes']) && \is_array($products[$i]['attributes'])) {
             foreach($products[$i]['attributes'] as $option => $value) {
               $shopping_cart .= HTML::hiddenField('id[' . $products[$i]['id'] . '][' . $option . ']', $value);
 
@@ -150,18 +150,18 @@
           $products_attributes = '';
 
           if (isset($products[$i]['attributes'])) {
-            if  (is_array($products[$i]['attributes'])) {
+            if  (\is_array($products[$i]['attributes'])) {
               foreach($products[$i]['attributes'] as $option => $value) {
                 $products_attributes_values_name = '';
                 $products_attributes_reference = '';
                 $products_attributes_image = '';
 
-                if (is_array($products[$i][$option]) && isset($products[$i][$option])) {
+                if (\is_array($products[$i][$option]) && isset($products[$i][$option])) {
                   $products_attributes_values_name = $products[$i][$option]['products_attributes_values_name'];
                   $products_attributes_reference = $products[$i][$option]['products_attributes_reference'];
                   $products_attributes_image = $products[$i][$option]['products_attributes_image'];
 
-                  if (!is_null($products[$i][$option]['products_attributes_image'])) {
+                  if (!\is_null($products[$i][$option]['products_attributes_image'])) {
 
                     if (is_file(CLICSHOPPING::getConfig('Shop') . $CLICSHOPPING_Template->getDirectoryTemplateImages() . $products_attributes_image)) {
                       $products_attributes_image = HTML::image($CLICSHOPPING_Template->getDirectoryTemplateImages() . $products_attributes_image, $products_attributes_values_name . '   ', 30, 30);
@@ -185,7 +185,7 @@
 
           $ticker = HTML::link($products_name_url, HTML::tickerImage($CLICSHOPPING_ProductsCommon->getProductsTickerSpecialsPourcentage($products_id), 'ModulesShoppingCartBootstrapTickerPourcentage', true )) .'</a>';
 
-          if (is_null($CLICSHOPPING_ProductsCommon->getProductsTickerSpecialsPourcentage($products_id))) {
+          if (\is_null($CLICSHOPPING_ProductsCommon->getProductsTickerSpecialsPourcentage($products_id))) {
             $ticker = '' ;
            }
 
@@ -237,7 +237,7 @@
     }
 
     public function check() {
-      return defined('MODULE_SHOPPING_CART_PRODUCTS_LISTING_STATUS');
+      return \defined('MODULE_SHOPPING_CART_PRODUCTS_LISTING_STATUS');
     }
 
     public function install() {

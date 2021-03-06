@@ -16,8 +16,8 @@
   use ClicShopping\Apps\Marketing\Specials\Classes\Shop\SpecialsClass;
 
   class ps_products_special {
-    public $code;
-    public $group;
+    public string $code;
+    public string $group;
     public string $title;
     public string $description;
     public ?int $sort_order = 0;
@@ -30,7 +30,7 @@
       $this->title = CLICSHOPPING::getDef('module_products_special_title');
       $this->description = CLICSHOPPING::getDef('module_products_special_description');
 
-      if (defined('MODULE_PRODUCTS_SPECIAL_STATUS')) {
+      if (\defined('MODULE_PRODUCTS_SPECIAL_STATUS')) {
         $this->sort_order = MODULE_PRODUCTS_SPECIAL_SORT_ORDER;
         $this->enabled = (MODULE_PRODUCTS_SPECIAL_STATUS == 'True');
       }
@@ -77,7 +77,7 @@
 // number of sort criterias
             $column_list = SpecialsClass::getCountColumnList();
 
-            for ($col = 0, $n = count($column_list); $col < $n; $col++) {
+            for ($col = 0, $n = \count($column_list); $col < $n; $col++) {
               switch ($column_list[$col]) {
                 case 'MODULE_PRODUCTS_SPECIAL_LIST_DATE_ADDED':
                   $lc_text = CLICSHOPPING::getDef('table_heading_date');
@@ -106,7 +106,7 @@
             $new_prods_content .= '</div>';
 
 /*
-            if ((defined('MODULE_HEADER_TAGS_GRID_LIST_VIEW_STATUS') && MODULE_HEADER_TAGS_GRID_LIST_VIEW_STATUS == 'True') && (strpos(MODULE_HEADER_TAGS_GRID_LIST_VIEW_PAGES, CLICSHOPPING::getBaseNameIndex() !== false))) {
+            if ((\defined('MODULE_HEADER_TAGS_GRID_LIST_VIEW_STATUS') && MODULE_HEADER_TAGS_GRID_LIST_VIEW_STATUS == 'True') && (strpos(MODULE_HEADER_TAGS_GRID_LIST_VIEW_PAGES, CLICSHOPPING::getBaseNameIndex() !== false))) {
               $link = CLICSHOPPING::link(CLICSHOPPING::getIndex(), CLICSHOPPING::getAllGET(array('page', 'info', 'sort')));
               $new_prods_content .= '<strong>' . CLICSHOPPING::getDef('text_view') . '</strong>';
               $new_prods_content .= '<div class="btn-group">';
@@ -213,7 +213,7 @@
               $products_quantity_unit = $CLICSHOPPING_ProductsFunctionTemplate->getProductQuantityUnitType($products_id);
 
 // **************************************************
-// Button Free - Must be above getProductsExhausted
+// Button Free - Must be above getProductsSoldOut
 // **************************************************
               if ($CLICSHOPPING_ProductsCommon->getProductsOrdersView($products_id) != 1 && NOT_DISPLAY_PRICE_ZERO == 'false') {
                 $submit_button = HTML::button(CLICSHOPPING::getDef('text_products_free'), '', $products_name_url, 'danger');
@@ -225,10 +225,10 @@
               }
 
 // **************************
-// Display an information if the stock is exhausted for all groups
+// Display an information if the stock is sold out for all groups
 // **************************
-              if (!empty($CLICSHOPPING_ProductsCommon->getProductsExhausted($products_id))) {
-                $submit_button = $CLICSHOPPING_ProductsCommon->getProductsExhausted($products_id);
+              if (!empty($CLICSHOPPING_ProductsCommon->getProductsSoldOut($products_id))) {
+                $submit_button = $CLICSHOPPING_ProductsCommon->getProductsSoldOut($products_id);
                 $form = '';
                 $endform = '';
                 $min_quantity = 0;
@@ -269,7 +269,7 @@
                 $tag = $CLICSHOPPING_ProductsFunctionTemplate->getProductsHeadTag($products_id);
 
                 $products_tag = '';
-                if (isset($tag) && is_array($tag)) {
+                if (isset($tag) && \is_array($tag)) {
                   foreach ($tag as $value) {
                     $products_tag .= '#<span class="productTag">' . HTML::link(CLICSHOPPING::link(null, 'Search&keywords='. HTML::outputProtected(utf8_decode($value) .'&search_in_description=1&categories_id=&inc_subcat=1'), 'rel="nofollow"'), $value) . '</span> ';
                   }
@@ -343,7 +343,7 @@
     }
 
     public function check() {
-      return defined('MODULE_PRODUCTS_SPECIAL_STATUS');
+      return \defined('MODULE_PRODUCTS_SPECIAL_STATUS');
     }
 
     public function install() {
@@ -449,7 +449,7 @@
           'configuration_title' => 'Do you want to display the stock ?',
           'configuration_key' => 'MODULE_PRODUCTS_SPECIAL_DISPLAY_STOCK',
           'configuration_value' => 'none',
-          'configuration_description' => 'Display the stock (in stock, exhaused, out of stock) ?',
+          'configuration_description' => 'Display the stock (in stock, sold out, out of stock) ?',
           'configuration_group_id' => '6',
           'sort_order' => '6',
           'set_function' => 'clic_cfg_set_boolean_value(array(\'none\', \'image\', \'number\'))',
