@@ -16,7 +16,6 @@
   $CLICSHOPPING_Breadcrumb = Registry::get('Breadcrumb');
   $CLICSHOPPING_ProductsCommon = Registry::get('ProductsCommon');
 ?>
-
   <div class="separator"></div>
   <div class="contentContainer">
     <div class="contentText">
@@ -26,7 +25,9 @@
     if (MODULE_HEADER_BREADCRUMP_STATUS == 'False' || empty(ClicShopping::getDef('module_header_breadcrump_title'))) {
 ?>
       <div class="separator"></div>
-      <div class="col-md-12 breadcrumb card">
+      <div class="separator"></div>
+      <div class="col-md-12 card breadcrumb">
+        <div class="separator"></div>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li>
@@ -37,7 +38,7 @@
 ?>
             </li>
           </ol>
-	</nav>
+        </nav>
       </div>
 <?php
       if (!CLICSHOPPING::getBaseNameIndex() && $CLICSHOPPING_ProductsCommon->getID()) {
@@ -51,20 +52,22 @@
   } else {
 ?>
       <div class="separator"></div>
-      <div class="col-md-12 breadcrumb card">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li>
+      <div class="separator"></div>
+      <div class="col-md-12 card breadcrumb">
+        <div class="separator"></div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li>
 <?php
     if ($CLICSHOPPING_Service->isStarted('Breadcrumb')) {
       echo $CLICSHOPPING_Breadcrumb->get(' &raquo; ');
     }
 ?>
-              </span>
-            </li>
-          </ol>
-        </nav>
-      </div>
+              </li>
+            </ol>
+          </nav>
+        </div>
+    
 <?php
     if (!CLICSHOPPING::getBaseNameIndex() && $CLICSHOPPING_ProductsCommon->getID()) {
 ?>

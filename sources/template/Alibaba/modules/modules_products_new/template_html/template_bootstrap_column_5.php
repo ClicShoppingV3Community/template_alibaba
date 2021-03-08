@@ -11,7 +11,7 @@
 
   use ClicShopping\OM\CLICSHOPPING;
 ?>
-<div class="col-md-<?php echo 12; ?> col-md-<?php echo 12; ?>">
+<div class="col-12 col-sm-<?php echo 12; ?> col-md-<?php echo 12; ?>">
   <div class="separator"></div>
     <article class="itemlist">
       <div class="row row-sm">

@@ -9,53 +9,37 @@
  *
  */
 
-  use ClicShopping\OM\HTML;
-  use ClicShopping\OM\HTTP;
   use ClicShopping\OM\CLICSHOPPING;
   use ClicShopping\OM\Registry;
+  use ClicShopping\OM\HTTP;
 
   $CLICSHOPPING_Hooks = Registry::get('Hooks');
   $CLICSHOPPING_Template = Registry::get('Template');
+  $CLICSHOPPING_Customer = Registry::get('Customer');
 ?>
 <!DOCTYPE html>
 <html <?php echo CLICSHOPPING::getDef('html_params'); ?>>
   <head>
-    <meta charset="<?php echo CLICSHOPPING::getDef('charset'); ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <base href="<?php echo HTTP::getShopUrlDomain() ;?>">
-    <?php echo $CLICSHOPPING_Template->getAppsHeaderTags(); ?>
-    <?php
-    if (!isset($_GET['Product'])) {
-      ?>
-      <title><?php echo HTML::outputProtected($CLICSHOPPING_Template->getTitle()); ?></title>
-      <meta name="description" content="<?php echo HTML::outputProtected($CLICSHOPPING_Template->getDescription());?>" />
-      <meta name="keywords"  content="<?php echo HTML::outputProtected($CLICSHOPPING_Template->getKeywords());?>" />
-      <meta name="news_keywords" content="<?php echo HTML::outputProtected($CLICSHOPPING_Template->getNewsKeywords());?>" />
-      <?php
-    }
-    ?>
-    <meta name="no-email-collection" content="<?php echo HTTP::typeUrlDomain(); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <?php
+// Meta Tag
      $source_folder = CLICSHOPPING::getConfig('dir_root', 'Shop') . 'includes/Module/Hooks/Shop/Header/';
      $output = 'HeaderOutput*';
      $call = 'HeaderCall*';
      $hook_call = 'Header';
 
      $CLICSHOPPING_Template->useRecursiveModulesHooksForTemplate($source_folder,  $output,  $call, $hook_call);
-
-     echo $CLICSHOPPING_Template->getBlocks('header_tags') . "\n";
 ?>
-  </head>
-  <body>
+   </head>
+  <body id="body">
     <div class="<?php echo BOOTSTRAP_CONTAINER;?>" id="<?php echo BOOTSTRAP_CONTAINER;?>">
       <div class="bodyWrapper" id="bodyWrapper">
-        <header class="page-header" id="page_header">
+        <header class="page-header" id="pageHeader">
 <?php
   if  ( MODE_VENTE_PRIVEE == 'false' || (MODE_VENTE_PRIVEE == 'true' && $CLICSHOPPING_Customer->isLoggedOn())) {
     echo $CLICSHOPPING_Template->getBlocks('modules_header');
   }
 ?>
         </header>
-        <div class="d-flex flex-wrap frameWork" id="frameWork">
-          <div id="bodyContent" class="col-lg-<?php echo $CLICSHOPPING_Template->getGridContentWidth(); ?> order-xs-1 order-lg-2">
+          <div class="d-flex flex-wrap frameWork" id="frameWork">
+            <div id="bodyContent" class="col-12 col-lg-<?php echo $CLICSHOPPING_Template->getGridContentWidth(); ?> order-xs-1 order-lg-2">

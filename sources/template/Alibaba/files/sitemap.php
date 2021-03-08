@@ -14,7 +14,9 @@
 <section class="index" id="index">
   <div class="contentContainer">
     <div class="contentText card">
-      <?php echo $CLICSHOPPING_Template->getBlocks('modules_sitemap'); ?>
+      <div class="d-flex flex-wrap">
+        <?php echo $CLICSHOPPING_Template->getBlocks('modules_sitemap'); ?>
+      </div>
       <div class="separator"></div>
     </div>
   </div>

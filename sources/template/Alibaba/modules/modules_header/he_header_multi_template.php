@@ -64,11 +64,15 @@
       $form = HTML::form('loginForm',  CLICSHOPPING::link(null, 'Account&LogIn&Process'), 'post', 'id="loginForm"', ['tokenize' => true]);
       $endform = '</form>';
 
-      $categories_dropdown = HTML::form('categoriesDropdown', 'index.php', null, 'id="categoriesDropdown"', ['tokenize' => true]);
+      if(\is_array($CLICSHOPPING_Category->getCategories())) {
+        $categories_dropdown = HTML::form('categoriesDropdown', 'index.php', null, 'id="categoriesDropdown"', ['tokenize' => true]);
 
-      $categories_dropdown .= HTML::selectField('cPath', $CLICSHOPPING_CategoryTree->getShopCategoryTree(), $cPath, 'onchange="this.form.submit();"');
-      $categories_dropdown .= '</form>';
-
+        $categories_dropdown .= HTML::selectField('cPath', $CLICSHOPPING_CategoryTree->getShopCategoryTree(), $cPath, 'onchange="this.form.submit();"');
+        $categories_dropdown .= '</form>';
+      } else {
+        $categories_dropdown = '';
+      }
+      
       if ($CLICSHOPPING_Service->isStarted('Banner')) {
         if ($banner = $CLICSHOPPING_Banner->bannerExists('dynamic',  MODULES_HEADER_MULTI_MODULE_LOGO_BANNER_GROUP)) {
           $logo_header = $CLICSHOPPING_Banner->displayBanner('static', $banner);
@@ -102,7 +106,7 @@
         require_once($filename);
         $header_template .= ob_get_clean();
       } else {
-        echo  '<div class="alert alert-warning text-md-center" role="alert">' . CLICSHOPPING::getDef('template_does_not_exist') . '</div>';
+        echo  '<div class="alert alert-warning text-center" role="alert">' . CLICSHOPPING::getDef('template_does_not_exist') . '</div>';
         exit;
       }
 
@@ -205,7 +209,6 @@
           'date_added' => 'now()'
         ]
       );
-
     }
 
     public function remove() {
@@ -261,11 +264,11 @@
           }
 
           if (isset($this->_data[$category_id]) && ($level != 0)) {
-            $result .= '<li class="dropdown dropdown-submenu multi-column-dropdown"><a href="#" tabindex="-1" class="dropdown-toggle" data-toggle="dropdown">';
+            $result .= '<li class="dropdown dropdown-submenu multi-column-dropdown"><a href="#" tabindex="-1" class="dropdown-toggle" data-bs-toggle="dropdown">';
             $caret = false;
           } elseif (isset($this->_data[$category_id]) && (($this->max_level == '0') || ($this->max_level > $level + 1))) {
             $result .= $this->root_start_string;
-            $result .= '<a href="#" tabindex="-1" class="dropdown-toggle" data-toggle="dropdown">';
+            $result .= '<a href="#" tabindex="-1" class="dropdown-toggle" data-bs-toggle="dropdown">';
             $caret = '<span class="caret"></span>';
 
           } else {
@@ -285,10 +288,10 @@
             if ($level < 1) {
               $root_link_title .= '<div class="row col-md-12">';
               $root_link_title .= '<div class="col-md-6 headerCategoriesImages" style="padding-bottom:10px;">' . $link_image . '</div>';
-              $root_link_title .= '<div class="col-md-6 fas fa-th-list">&nbsp;' . $link_title . '</div>';
+              $root_link_title .= '<div class="col-md-6 bi bi-card-list">&nbsp;' . $link_title . '</div>';
               $root_link_title .= '</div>';
             } else {
-              $root_link_title .= '<div class="col-md-12 fas fa-th-list" style="padding-bottom:10px;">&nbsp;' . $link_title . '</div>';
+              $root_link_title .= '<div class="col-md-12 bi bi-card-list" style="padding-bottom:10px;">&nbsp;' . $link_title . '</div>';
             }
 
             $root_link_title .= '<li class="visible-xs dropdown-divider"></li>';

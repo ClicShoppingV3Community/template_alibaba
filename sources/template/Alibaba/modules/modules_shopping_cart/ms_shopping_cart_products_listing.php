@@ -58,18 +58,19 @@
 
         $shopping_cart = '<!-- ms_shopping_cart_products_listing -->' . "\n";
         $shopping_cart .= $form;
-        $shopping_cart .= '<div class="card">';
+        $shopping_cart .= '<div class="card"
+>';
         $shopping_cart .= '<table id="cart" class="table table-hover table-condensed ModulesShoppingCartProductsListingTableHeading">';
         $shopping_cart .= '<thead>';
         $shopping_cart .= '<tr>';
         $shopping_cart .= '<th style="width:60%">' . CLICSHOPPING::getDef('table_heading_products') . '</th>';
         $shopping_cart .= '<th style="width:18%">' . CLICSHOPPING::getDef('table_heading_quantity') . '</th>';
-        $shopping_cart .= '<th style="width:22%" class="text-md-right">' . CLICSHOPPING::getDef('table_heading_total') . '</th>';
+        $shopping_cart .= '<th style="width:22%" class="text-end">' . CLICSHOPPING::getDef('table_heading_total') . '</th>';
         $shopping_cart .= '</tr>';
         $shopping_cart .= '</thead>';
         $shopping_cart .= '<tbody>';
 
-        for ($i=0, $n=count($products); $i<$n; $i++) {
+        for ($i=0, $n=\count($products); $i<$n; $i++) {
 // Push all attributes information in an array
           if (isset($products[$i]['attributes']) && \is_array($products[$i]['attributes'])) {
             foreach($products[$i]['attributes'] as $option => $value) {
@@ -91,7 +92,7 @@
         $products_name = null;
         $products_option = null;
 
-        for ($i=0, $n=count($products); $i<$n; $i++) {
+        for ($i=0, $n=\count($products); $i<$n; $i++) {
           $products_name_url = $CLICSHOPPING_ProductsFunctionTemplate->getProductsUrlRewrited()->getProductNameUrl($CLICSHOPPING_Prod::getProductID($products[$i]['id']));
 
           $products_name = HTML::hiddenField('products_id[]', $products[$i]['id']);
@@ -99,7 +100,7 @@
           $remove_product_id = 'remove_product_' . $products[$i]['id'];
 
           $trash = '
-          <a href="#" data-toggle="modal" data-target="#' . $remove_product_id[$i] . '"><i class="fas fa-trash"></i></a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#' . $remove_product_id[$i] . '"><i class="bi bi-trash2-fill"></i></a>
           <div class="modal hide fade active' . $remove_product_id[$i] . '" tabindex="-1" role="dialog" aria-labelledby="' . $remove_product_id[$i] . '" aria-hidden="true" id="' . $remove_product_id[$i] . '">
             <div class="modal-dialog modal-sm">
               <div class="modal-content">
@@ -111,8 +112,8 @@
                     ' . CLICSHOPPING::getDef('text_title_modal_info') . '
                   </div>
                   <div class="modal-footer">
-                     <span class="pull-left" data-dismiss="modal" aria-hidden="true">' . HTML::button(ClicShopping::getDef('button_cancel'), null, null, 'light') . '</span>
-                     <span class="pull-right">' . HTML::button(CLICSHOPPING::getDef('button_delete'), null, CLICSHOPPING::link(null, 'Cart&Delete&products_id=' . $products[$i]['id']), 'danger') . '</span>
+                     <span class="pull-start" data-bs-dismiss="modal" aria-hidden="true">' . HTML::button(ClicShopping::getDef('button_cancel'), null, null, 'light') . '</span>
+                     <span class="pull-end">' . HTML::button(CLICSHOPPING::getDef('button_delete'), null, CLICSHOPPING::link(null, 'Cart&Delete&products_id=' . $products[$i]['id']), 'danger') . '</span>
                   </div>          
                 </div>
               </div>
@@ -178,7 +179,7 @@
             }
           }
 
-          $button_update = HTML::button(null, 'fas fa-sync btn-ShoppingCartRefresh', null, null, null, 'sm');
+          $button_update = HTML::button(null, 'bi bi-arrow-repeat btn-ShoppingCartRefresh', null, null, null, 'sm');
 
           $products_id = $CLICSHOPPING_Prod::getProductID($products[$i]['id']);
           $products_name_url = $CLICSHOPPING_ProductsFunctionTemplate->getProductsUrlRewrited()->getProductNameUrl($products_id);
@@ -196,7 +197,7 @@
           $cart .='<div class="row">';
           $cart .='<div id="ShoppingCartImage" class="col-sm-2 hidden-xs">' . $image . '</div>';
           $cart .='<div class="col-sm-10">';
-          $cart .='<p id="ShoppingCartProductsName" class="nomargin text-sm-left">' . $ticker . ' ' .  $products_name . ' ' . $total_overall_reviews . '</p>';
+          $cart .='<p id="ShoppingCartProductsName" class="nomargin text-start">' . $ticker . ' ' .  $products_name . ' ' . $total_overall_reviews . '</p>';
           $cart .='<p id="ShoppingCartProductsOptions" class="small">' . $products_attributes . '</p>';
           $cart .='</div>';
           $cart .='</div>';
@@ -205,7 +206,7 @@
           $cart .= HTML::inputField('cart_quantity[' . $i . ']', $products[$i]['quantity'], 'min="0"', 'number', null, 'form-control ModulesShoppingCartProductsListingShoppingCartQuantity') . ' ' . $button_update . ' ' . $trash;
           $cart .= HTML::hiddenField('products_id[' . $i . ']', $products[$i]['id'], 'id="products_id' . $products[$i]['id'] . '"');
           $cart .='</td>';
-          $cart .='<td id="ShoppingCartPrice" data-th="Subtotal" class="text-sm-right">' . $CLICSHOPPING_Currencies->displayPrice($products[$i]['final_price'], $CLICSHOPPING_Tax->getTaxRate($products[$i]['tax_class_id']), $products[$i]['quantity']) . '</td>';
+          $cart .='<td id="ShoppingCartPrice" data-th="Subtotal" class="text-end">' . $CLICSHOPPING_Currencies->displayPrice($products[$i]['final_price'], $CLICSHOPPING_Tax->getTaxRate($products[$i]['tax_class_id']), $products[$i]['quantity']) . '</td>';
           $cart .='</tr>';
 
 // display SaveMoney Hook

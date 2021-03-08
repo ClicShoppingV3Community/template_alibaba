@@ -26,7 +26,7 @@
 ?>
   <div class="separator"></div>
   <div class="control-group">
-    <div class="controls">
+    <div>
       <div class="buttonSet">
         <span class="float-end"><?php echo HTML::button(CLICSHOPPING::getDef('button_continue'), null, $origin_href, 'success'); ?></span>
       </div>

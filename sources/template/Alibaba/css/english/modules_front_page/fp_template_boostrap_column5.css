@@ -8,6 +8,12 @@
  *
  */
 
+.ModulesFrontPageBoostrapColumn5 {
+  min-width: 18.75rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
 .ModulesFrontPageBoostrapColumn5Image {
   text-align: center;
 }
@@ -20,9 +26,10 @@
   height: 0.625rem;
   padding-left: 0.3125rem;
   padding-right:5px;
+  font-size: 0.875rem!important;
 }
 
-.ModulesFrontPageBoostrapColumn5Title A {
+.ModulesFrontPageBoostrapColumn5Title h3  A {
   text-decoration: none;
 }
 

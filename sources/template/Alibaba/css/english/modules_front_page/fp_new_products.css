@@ -14,11 +14,15 @@
   padding-right: 0rem;
 }
 
+.ModuleFrontPageColNewProducts {
+  padding-right: 0.5rem;
+  min-width: 18.75rem;
+}
 
 .ModuleFrontPageProductsNewHeading h2 {
   font-size:1.25rem;
 }
 
-
-
-
+.ModulesFrontPageBoostrapColumn5Button {
+  padding-bottom: 0.5rem;
+}

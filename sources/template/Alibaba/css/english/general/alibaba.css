@@ -11,8 +11,8 @@
 
 .row-sm > [class^="col"] {
   padding-left: 7px;
-  padding-right: 7px; }
-
+  padding-right: 7px;
+}
 
 .col-1-24 {
   -webkit-box-flex: 0;
@@ -1085,7 +1085,7 @@
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;}
 
 /* nogutter for 24 grid cols */
 .no-gutters > [class*="col-"] {

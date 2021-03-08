@@ -24,6 +24,8 @@
     echo $CLICSHOPPING_MessageStack->get('main');
   }
 
+  $process = false;
+
   require_once($CLICSHOPPING_Template->getTemplateFiles('breadcrumb'));
 
   echo HTML::form('checkout_shipping_address', CLICSHOPPING::link(null, 'Checkout&ShippingAddress&Process'), 'post', 'role="form" id="usrForm"', ['tokenize' => true, 'action' => 'process']);
@@ -76,14 +78,14 @@
         while ($addresses = $Qaddresses->fetch()) {
           $format_id = $CLICSHOPPING_Address->getAddressFormatId($Qaddresses->valueInt('country_id'));
 ?>
-        <div class="col-md-4">
+        <div class="col-md-4 m-1">
           <div class="card panel-<?php echo ($Qaddresses->valueInt('address_book_id') == $CLICSHOPPING_Customer->hasDefaultAddress()) ? 'primary' : 'default'; ?>">
             <div class="card-header"><strong><?php echo HTML::outputProtected($Qaddresses->value('firstname') . ' ' . $Qaddresses->value('lastname')); ?></strong></div>
             <div class="card-block">
               <div class="separator"></div>
               <?php echo $CLICSHOPPING_Address->addressFormat($format_id, $addresses, true, ' ', '<br />'); ?>
             </div>
-            <div class="card-footer text-md-center">
+            <div class="card-footer text-center">
               <div class="custom-control custom-radio custom-control-inline">
                 <?php echo HTML::radioField('address', $Qaddresses->valueInt('address_book_id'), ($Qaddresses->valueInt('address_book_id') == $_SESSION['sendto']), 'class="custom-control-input" id="address_book_id' . $radio_buttons .'" name="address_book_id' . $radio_buttons .'"'); ?>
                 <label class="custom-control-label" for="address_book_id<?php echo $radio_buttons; ?>"</label>
@@ -134,7 +136,7 @@
 ?>
     <div class="separator"></div>
     <div class="control-group">
-     <div class="controls">
+     <div>
        <div class="buttonSet">
          <span class="float-end"><label for="buttonContinue"><?php echo HTML::button(CLICSHOPPING::getDef('button_continue'), null, null, 'success'); ?></label></span>
        </div>
@@ -144,7 +146,7 @@
   if ($process === true) {
 ?>
     <div class="control-group">
-      <div class="controls">
+      <div>
         <div class="buttonSet">
           <span class="float-start"><label for="buttonBack"><?php echo HTML::button(CLICSHOPPING::getDef('button_back'), '', CLICSHOPPING::link(null, 'Checkout&ShippingAddress'),'info'); ?></label></span>
         </div>
