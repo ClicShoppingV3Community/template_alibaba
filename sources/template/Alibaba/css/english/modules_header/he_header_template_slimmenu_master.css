@@ -1,0 +1,252 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+div.Slim {
+  padding-top: 0.625rem;
+  background-color: #000;
+}
+
+div.slimRow {
+  margin-left: 0rem;
+  margin-right: 0rem;
+  background-color: #000;
+}
+
+.menu-collapser {
+    position: relative;
+    background-color: #000;
+    color: #fff;
+/*    text-shadow: 0 1px 0 rgba(0,0,0,0.5);*/
+    font-weight: bold;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-transform: uppercase;
+}
+.collapse-button {
+    position: absolute;
+    right: 0.5rem;
+    top: 20%;
+    width: 2.5rem;
+    background-color: #000;
+    background-image: linear-gradient(to bottom, #eee, #eee);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: #eee;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.075);
+    padding: 7px 10px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    font-size: 0.75rem;
+    text-align: center;
+/*
+    transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+*/
+}
+.collapse-button:hover, .collapse-button:focus {
+    background-image: none;
+    background-color: #524169;
+    color: #fff;
+}
+.collapse-button .icon-bar {
+    background-color: #7f736f;
+    border-radius: 1px 1px 1px 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    display: block;
+    height: 2px;
+    width: 1.125rem;
+    margin: 2px 0;
+}
+
+ul.slimmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ul.slimmenu li {
+    position: relative;
+    display: inline-block;
+    background-color: #000; /*fonds menu 1er niveau*/
+}
+
+ul.slimmenu > li {
+  margin-right: -5px;
+/*  border-left: 1px solid #7f736f */
+}
+
+ul.slimmenu > li:first-child {
+    border-left: 0
+}
+
+ul.slimmenu > li:last-child {
+    margin-right:  0
+}
+
+ul.slimmenu li a {
+    display: block;
+    color: #fff;
+    padding: 0.75rem 4rem 0.75rem 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    width:100%; /* longueur des colonnes 48px*/
+    padding-left: 0.3125rem;
+    text-transform: uppercase;
+    text-decoration: none;
+/*
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -webkit-transition: background-color 0.5s ease-out;
+*/
+}
+ul.slimmenu li a:hover {
+/*    background-color: #524169;*/
+    background-color: #080808;
+    background-image:linear-gradient(#080808, #080808);
+    color:#fff;
+    text-decoration: none;
+    border-radius: 5px 5px 0px 0px;
+   -moz-border-radius: 5px 5px 0px 0px;
+   -webkit-border-radius: 5px 5px 0px 0px;
+}
+
+ul.slimmenu li .sub-collapser {
+
+/*    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.075);*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.875rem;
+    height: 1.875rem;
+    text-align: center;
+    z-index: 999;
+    cursor: pointer;
+}
+
+ul.slimmenu li .sub-collapser:before {
+
+    content: '';
+    display: inline-block;
+    height: 0.625rem;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+ul.slimmenu li .sub-collapser > i {
+    color: #000; /* couleur pointeur*/
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+ul.slimmenu li ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+ul.slimmenu li ul li {
+  background-color: #000; /*  fonds sous menu */
+  width: 21.25rem; /* taille sous menu*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+ul.slimmenu li > ul {
+    display: none;
+    position: absolute;
+    left: -40px;
+    top: 100%;
+    z-index: 999;
+    width: 100%;
+
+}
+
+ul.slimmenu li > ul > li ul {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+
+
+/*
+    border:1px solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+   left: 0.625rem;
+    z-index: 1999;
+*/
+
+
+}
+
+ul.slimmenu.collapsed li {
+    width: 100%;
+/*
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+*/
+}
+ul.slimmenu.collapsed li a {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+
+
+/*
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+*/
+}
+ul.slimmenu.collapsed li .sub-collapser {
+    height: 2.5rem;
+}
+ul.slimmenu.collapsed li > ul {
+    display: none;
+    position: static;
+}
+
+
+span.slimmenuTitle {
+  width: 6.25rem;
+}
+
+span.slimmenuContact {
+  width: 6.25rem;
+}
+
+
+span.slimMenuBlog {
+  width: 6.25rem;
+}

@@ -1,0 +1,98 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+.ModulesProductsNewBoostrapColumn7Image {
+    text-align: center;
+}
+
+.ModulesProductsNewBoostrapColumn7Title h3 {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: text-top;
+    padding-top: 0.3125rem;
+    height: 0.625rem;
+    padding-left: 0.3125rem;
+    padding-right: 5px;
+    color: #5B0E0D;
+}
+
+.ModulesProductsNewBoostrapColumn7Title A {
+    color: #5B0E0D;
+    text-decoration: none;
+
+}
+
+.ModulesProductsNewBoostrapColumn7ShortDescription h3 {
+    font-size: 0.625rem;
+    text-align: left;
+    padding-top: 0.3125rem;
+    color: #000;
+    text-transform: lowercase;
+    font-weight: normal;
+    padding-left: 0.3125rem;
+    padding-right: 5px;
+}
+
+.ModulesProductsNewBoostrapColumn7TextPrice {
+    color: #000000;
+    text-align: center;
+    vertical-align: text-top;
+    font-size: 0.75rem !important;
+    padding-top: 0.625rem;
+}
+
+
+.ModulesProductsNewBoostrapColumn7StockImage {
+    font-size: 9px;
+    text-align: center;
+    vertical-align: text-top;
+    color: #7F736F;
+    padding-top: 0.625rem;
+}
+
+
+.ModulesProductsNewBoostrapColumn7ImageNewArrival {
+    font-size: 9px;
+    text-align: center;
+    vertical-align: text-top;
+    color: #7F736F;
+    padding-top: 0.625rem;
+}
+
+.ModulesProductsNewBoostrapColumn7QuantityMinOrder {
+    font-size: 9px;
+    text-align: center;
+    color: #7F736F;
+    padding-top: 0.625rem;
+    padding-bottom: 5px;
+}
+
+
+.ModulesProductsNewwBoostrapColumn7ProductsQuantityUnit {
+    font-size: 9px;
+    text-align: center;
+    color: #7F736F;
+    padding-top: 0.625rem;
+}
+
+.ModulesProductsNewBoostrapColumn7ViewDetails {
+    text-align: center;
+}
+
+.ModulesProductsNewBoostrapColumn7SubmitButton {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+

@@ -1,0 +1,170 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+.ModulesProductsNewBoostrapColumnAnimationImage {
+    text-align: center;
+}
+
+.ModulesProductsNewBoostrapColumnAnimationTitle h3 {
+    font-size: 0.6875rem;
+    text-align: left;
+    vertical-align: text-top;
+    padding-top: 0.3125rem;
+    height: 0.625rem;
+    padding-left: 0.3125rem;
+    padding-right: 5px;
+}
+
+.ModulesProductsNewBoostrapColumnAnimationTitle A {
+    text-decoration: none;
+    font-weight: bold;
+    color: #5B0E0D;
+}
+
+.ModulesProductsNewBoostrapColumnAnimationShortDescription h3 {
+    font-size: 0.6625rem;
+    text-align: left;
+    padding-top: 0.3125rem;
+    text-transform: lowercase;
+    font-weight: normal;
+    padding-left: 0.3125rem;
+    padding-right: 5px;
+}
+
+.ModulesProductsNewBoostrapColumnAnimationTextPrice {
+    color: #000;
+    text-align: center;
+    vertical-align: text-top;
+    font-size: 0.75rem !important;
+    padding-bottom: 0.625rem;
+}
+
+
+.ModulesProductsNewBoostrapColumnAnimationStockImage {
+    font-size: 0.5625rem;
+    text-align: center;
+    vertical-align: text-top;
+    color: #7F736F;
+    padding-top: 0.625rem;
+}
+
+
+.ModulesProductsNewBoostrapColumnAnimationQuantityMinOrder {
+    font-size: 0.5625rem;
+    text-align: center;
+    color: #7F736F;
+}
+
+
+.ModulesProductsNewBoostrapColumnAnimationProductsQuantityUnit {
+    font-size: 0.5625rem;
+    text-align: center;
+    color: #7F736F;
+    padding-top: 0.625rem;
+}
+
+.ModulesProductsNewBoostrapColumnAnimationViewDetails {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ModulesProductsNewBoostrapColumnAnimationSubmitButton {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/**********************/
+/* button animation */
+/**********************/
+
+
+.ModulesProductsNewBootstrapAction {
+    overflow: hidden;
+    padding-top: 0.3125rem;
+}
+
+.btn-ModulesProductsNewBootstrapAction {
+    display: block;
+    overflow: hidden;
+    border: none;
+    white-space: nowrap;
+    width: 25px;
+    height: 25px;
+    background-color: #cccccc;
+    padding-left: 1.625rem;
+    margin-top: 2px;
+    /*    position: absolute; */
+    position: sticky;
+    color: #fff;
+    left: 0.9375rem;
+    text-align: left;
+    z-index: 13;
+}
+
+.btn-ModulesProductsNewBootstrapAction span {
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.btn-ModulesProductsNewBootstrapAction:before {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 0.875rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.btn-ModulesProductsNewBootstrapAction:hover {
+    width: auto;
+    background-color: #5B0E0D;
+}
+
+.btn-ModulesProductsNewBootstrapAction:hover span {
+    display: block;
+    opacity: 1;
+    padding-right: 0.625rem;
+}
+
+.btn-ModulesProductsNewBootstrapAction:hover span span {
+    padding: 0;
+}
+
+
+.btn-ModulesProductsNewBootstrapAction.btn-ModulesProductsNewBootstrapCart {
+    bottom: 50px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.btn-ModulesProductsNewBootstrapAction.btn-ModulesProductsNewBootstrapCart:before {
+    content: "\f07a";
+}
+
+.btn-ModulesProductsNewBootstrapAction.btn-ModulesProductsNewBootstrapDetail {
+    bottom: 1.25rem;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.btn-ModulesProductsNewBootstrapAction.btn-ModulesProductsNewBootstrapDetail:before {
+    content: "\f0fe";
+}
+
+.btn-ModulesProductsNewBootstrapDetail:hover {
+    background-color: #EDAC27;
+}

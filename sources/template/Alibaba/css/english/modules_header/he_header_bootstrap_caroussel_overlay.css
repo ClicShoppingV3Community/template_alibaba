@@ -1,0 +1,35 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+.carousel-controloverlay.left {
+    background-image: none;
+}
+
+.carousel-controloverlay.right {
+    background-image: none;
+}
+
+.itemHeaderBoostrapCarousselOverlay img {
+    background-color: #fff;
+    width: 100%;
+}
+
+div.BootstrapCarrousselOverlay {
+    position: absolute;
+    z-index: 12;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-control {
+    top: 50%;
+}

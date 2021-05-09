@@ -1,0 +1,85 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+.card.boxeContainerBestSellers {
+    margin-top: 0.625rem;
+    border-radius: 0.25rem;
+}
+
+.card-img-top.boxeBannerContentsBestSellers {
+    text-align: center;
+}
+
+.card-header.boxeHeadingBestSellers {
+
+
+    padding-left: 3px;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.card-title.boxeTitleBestSellers {
+    overflow: hidden;
+    padding: 3px;
+    text-transform: uppercase;
+    font-size: 0.6875rem;
+    font-weight: normal;
+}
+
+.card-text.boxeContentsBestSellers {
+    overflow: hidden;
+    font-size: 0.75rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.10rem;
+    padding-right: 0.10rem;
+    padding-left: 0.20rem;
+    text-transform: uppercase;
+}
+
+.card-footer.boxeBottomBestSellers {
+    border-top: none;
+    padding: 0rem 0rem;
+}
+
+
+.card-block.boxeContentArroundBestSellers {
+    overflow: hidden;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+}
+
+.card-img-top.boxeBestSellers {
+}
+
+
+li.bestSellerLi {
+    font-weight: normal;
+    margin: 0 5px 0 5px;
+    padding-left: 0.2rem;
+    list-style: none;
+}
+
+li.bestSellerLi a {
+    border: 0rem;
+    padding: 0 5px;
+
+}
+
+
+ol.olBestSellers {
+    padding-left: 0.3125rem;
+    list-style: none;
+}
+
+ol.olBestSellers a {
+    text-decoration: none !important;
+}
+

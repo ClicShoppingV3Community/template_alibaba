@@ -1,0 +1,56 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+.card.boxeContainerShoppingCartRecentlyVisited{
+  margin-top: 0.625rem;
+  border-radius: 0.25rem;
+}
+
+.card-img-top.boxeBannerContentsShoppingCartRecentlyVisited{
+  text-align: center;
+}
+
+.card-header.boxeHeadingShoppingCartRecentlyVisited{
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  padding-left: 3px;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.card-title.boxeTitleShoppingCartRecentlyVisited{
+  overflow: hidden;
+  padding: 3px;
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  font-weight: normal;
+}
+
+.card-text.boxeContentsShoppingCartRecentlyVisited{
+  overflow: hidden;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.card-footer.boxeBottomShoppingCartRecentlyVisited{
+  border-top: none;
+  padding: 0rem 0rem;
+}
+
+
+.card-block.boxeContentArroundShoppingCartRecentlyVisited{
+  font-size: 0.695rem;
+}
+
+
+
+
+

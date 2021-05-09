@@ -1,0 +1,29 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+div.moduleBlogContentTagProductText  {
+}
+
+span.moduleBlogContentTagProduct h3 {
+}
+
+.moduleBlogContentTagProduct A {
+  background-color: #eee;
+  display: inline-block;
+  padding: 0.25rem 6px;
+  margin-bottom: 0.625rem;
+  color: #555;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  line-height: 1.375rem;
+  cursor: text;
+  text-decoration: underline;
+}

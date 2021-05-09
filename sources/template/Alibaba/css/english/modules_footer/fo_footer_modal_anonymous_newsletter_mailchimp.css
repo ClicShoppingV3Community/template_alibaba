@@ -1,0 +1,26 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+.footerModalAnonymousNewsletterMailchimpTitle h4 {
+}
+
+.footerModalAnonymousNewsletterMailchimpText {
+    margin-bottom: 0.9375rem;
+    text-transform: none;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    padding: 0.625rem;
+
+}
+
+.footerModalAnonymousNewsletterMailchimpNewsletter {
+    padding-top: 0.625rem;
+    padding-left: 3rem;
+}

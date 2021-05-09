@@ -1,0 +1,60 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+
+div.blogSummaryTitleLine1, span.blogSummaryTitleLine1 h2 {
+  float: left;
+  color:#682b0e;
+  font-size:0.6875rem;
+  font-weight:bold;  
+  padding-left: 0.625rem;
+}
+
+.blogSummaryTitleLine1 A {
+  color:#682b0e;
+  font-weight:bold; 
+}
+
+
+div.blogSummaryDateLine1, span.blogSummaryDateLine1 h3 {
+  float: right;
+  color:#000000;
+  font-size:small;
+  font-weight:normal;  
+  padding-right: 0.625rem;
+  text-transform: lowercase; 
+
+}
+
+/* conflit avec PoductsListingRow*/
+div.blogSummaryShortDescriptionLine1 h3 {
+  font-size: 0.6875rem;
+  font-weight: normal;
+  text-align:justify;
+  padding-top: 0.625rem;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  text-transform: lowercase;
+  color: #4F4F4F;
+  clear: both; 
+}
+
+
+div.blogSummaryAuthorLine1 h3 {
+  color:#000000;
+  font-size: 0.625rem;
+  font-weight:bold;
+  text-transform: lowercase; 
+}
+
+.blogSummaryAuthorLine1 A {
+  color:#000000;
+  text-transform: lowercase; 
+}

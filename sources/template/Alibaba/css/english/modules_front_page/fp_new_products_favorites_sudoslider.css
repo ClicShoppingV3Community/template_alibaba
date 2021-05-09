@@ -1,0 +1,46 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+#slider5, #slider5 li {
+    width: auto;
+    overflow: hidden;
+    height: 100%;
+    padding-top: 0.625rem;
+}
+
+#slider5 {
+    width: auto;
+}
+
+#slider5 img {
+    border: none;
+}
+
+div.moduleFrontPageProductsFavoritesSudoSliderTitle, span.moduleFrontPageProductsFavoritesSudoSliderTitle h2 {
+    font-size: 1.25rem;
+    color: #753d22;
+    padding-left: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.moduleFrontPageProductsFavoritesSudoSliderProductsName {
+    text-align: center;
+}
+
+.modulesFrontPageProductsFavoritesSudoSliderBorder {
+    border: 1px solid #dbd5d5;
+    height: 269px;
+}
+
+.moduleFrontPageProductsFavoritesSudoSliderTextPrice {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.625rem;
+}

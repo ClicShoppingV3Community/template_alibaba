@@ -1,0 +1,79 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+
+div.blogSummaryTitleColumn1, span.blogSummaryTitleColumn1 h2 {
+  float: left;
+  color:#682b0e;
+  font-size:0.6875rem;
+  font-weight:bold;  
+  padding-left: 0.625rem;
+}
+
+.blogSummaryTitleColumn1 A {
+  color:#682b0e;
+  font-weight:bold; 
+}
+
+
+div.blogSummaryDateColumn1, span.blogSummaryDateColumn1 h3 {
+  float: right;
+  color:#000000;
+  font-size:small;
+  font-weight:normal;  
+  padding-right: 0.625rem;
+  text-transform: lowercase; 
+
+}
+
+/* conflit avec PoductsListingRow*/
+div.blogSummaryShortDescriptionColumn1 h3 {
+  font-size: 0.6875rem;
+  font-weight: normal;
+  text-align:justify;
+  padding-top: 0.625rem;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  text-transform: lowercase;
+  color: #4F4F4F;
+  clear: both; 
+}
+
+
+span.blogSummaryAuthorColumn1 h3 {
+  color:#000000;
+  font-size: 0.625rem;
+  font-weight:bold;
+  text-transform: lowercase; 
+  text-align: right;
+  float:right;
+}
+
+span.blogSummaryAuthorColumn1 A {
+  color:#000000;
+  text-transform: lowercase;
+}
+
+
+
+div.blogSummaryDateColumn1, span.blogSummaryDateColumn1 h3 {
+  font-size:x-small;
+}
+
+span.blogSummaryShortFollowColumn1 h3 {
+  font-size:small;
+  float:left;
+
+}
+
+span.blogSummaryShortFollowColumn1 A {
+  color:#000000;
+  text-transform: lowercase;
+}

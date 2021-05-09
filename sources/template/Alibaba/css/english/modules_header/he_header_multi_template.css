@@ -1,0 +1,179 @@
+/*
+ *
+ *  @copyright 2008 - https://www.clicshopping.org
+ *  @Brand : ClicShopping(Tm) at Inpi all right Reserved
+ *  @Licence GPL 2 & MIT
+ *  @licence MIT - Portion of osCommerce 2.4
+ *  @Info : https://www.clicshopping.org/forum/trademark/
+ *
+ */
+
+
+a.advancedSearchAdvancedSearch {
+}
+
+.nav {
+    padding-left: 30px;
+}
+
+.nav-item {
+    display: block;
+}
+
+
+.navbar-toggle {
+    padding-right: 30px;
+}
+
+.navbar-no-corners {
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-left: none;
+    border-right: none;
+}
+
+.navbar-no-margin {
+    margin-bottom: 0 !important;
+}
+
+.navbar {
+    background-color: #000;
+}
+
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-inverse {
+    background-color: #000;
+    border-color: #080808;
+}
+
+
+/*
+ul.templateHeader.collapsed li a {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+*/
+
+
+ul.templateHeader li a {
+    display: block;
+    width: 100%;
+    list-style-type: none;
+
+}
+
+.TemplateHeaderbackground {
+    background-color: #343a40;
+}
+
+
+.TemplateHeaderCategoriesNavigation {
+    padding-left: 3px;
+}
+
+.TemplateHeaderCategoriesNavigation a:hover {
+    text-decoration: none;
+}
+
+
+ul.TemplateHeaderCategoriesNavigation {
+    list-style: outside none none;
+}
+
+.TemplateHeaderCategoriesNavigation > li {
+    border-bottom: 1px solid #343a40;
+    background-color: #fff;
+    line-height: 2.5rem;
+
+}
+
+.CategoriesNavigationTemplateHeader li {
+    position: relative;
+    text-transform: capitalize;
+}
+
+span.TemplateHeaderCategoriesNavigation {
+    font-weight: bold;
+}
+
+
+/********************
+* sub menu level
+*********************/
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-menu > .dropdown > .dropdown-menu, .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-menu > .dropdown > a:after, .dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #343a40;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+    border-left-color: #555;
+}
+
+.multi-column-dropdown {
+    list-style: none;
+}
+
+.multi-column-dropdown li a {
+    display: block;
+    clear: both;
+    line-height: 1.428571429;
+    color: #333;
+    white-space: normal;
+}
+
+.multi-column-dropdown li a:hover {
+    text-decoration: none;
+    color: #343a40;
+    background-color: #f5f5f5;
+}
+
+.dropdown-menu.columns-2 {
+    min-width: 300px;
+    float: left;
+}
+
+.headerMultiTemplateDefaultLi {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.dropdown-toggle {
+   color:#343a40;
+}
+
+
+.alibabaTextHeader A {
+    color:#343a40;
+    list-style: none;
+    text-decoration: none;
+}
+
+li.dropdown {
+    list-style: none;
+}
