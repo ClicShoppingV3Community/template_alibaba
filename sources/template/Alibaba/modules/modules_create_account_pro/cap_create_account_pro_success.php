@@ -17,8 +17,8 @@
   class cap_create_account_pro_success {
     public string $code;
     public string $group;
-    public string $title;
-    public string $description;
+    public $title;
+    public $description;
     public ?int $sort_order = 0;
     public bool $enabled = false;
 
@@ -39,7 +39,7 @@
   public function execute() {
     $CLICSHOPPING_Template = Registry::get('Template');
 
-    if (isset($_GET['Account']) && isset($_GET['CreatePro']) && isset($_GET['Success'])) {
+    if (isset($_GET['Account'], $_GET['CreatePro'], $_GET['Success'])) {
       $origin_href = CreateAccount::getOriginHref();
 
       $content_width = (int)MODULE_CREATE_ACCOUNT_PRO_SUCCESS_CONTENT_WIDTH;
